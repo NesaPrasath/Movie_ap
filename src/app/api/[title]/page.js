@@ -11,7 +11,7 @@ export default function Page() {
   const param=useParams()
   const [data,setData]=useState({Response:'True'})
   const {user}=useContext(UserContext)
-  const recdata=require('E:/Movie-app/src/data/movies/data.json').data
+  const recdata=require('src/data/movies/data.json').data
   // https://api.kinocheck.de/movies?tmdb_id=299534
     useEffect(()=>
     {

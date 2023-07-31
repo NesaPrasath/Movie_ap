@@ -16,15 +16,15 @@ export default function Slider() {
   {
     if(index<current)
     {
-      return <div key={data.id} className='flex bg-black w-full absolute -left-full top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/><iframe width="600" height="400" src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe></div>
+      return <div key={data.id} className='flex bg-black w-full absolute -left-full top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/></div>
     }
     else if(index===current)
     {
-      return <div key={data.id} className='flex bg-black w-full absolute left-0 top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/><iframe width="600" height="400" src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe></div>
+      return <div key={data.id} className='flex bg-black w-full absolute left-0 top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/></div>
     }
     else
     {
-      return <div key={data.id} className='flex bg-black w-full absolute left-full top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/><iframe width="600" height="400" src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe></div>
+      return <div key={data.id} className='flex bg-black w-full absolute left-full top-0 h-full justify-center transition-all duration-300 ease-linear'><Image alt={""} width={300} height={200} src={data.img} className=' object-contain bg-black'/></div>
     }
   }
   function handleSlide(e)
