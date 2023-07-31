@@ -12,10 +12,11 @@ export default function Page() {
   const [data,setData]=useState({Response:'True'})
   const {user}=useContext(UserContext)
   const recdata=require('src/data/movies/data.json').data
+  const api_key=process.env.NEXT_PUBLIC_API
   // https://api.kinocheck.de/movies?tmdb_id=299534
     useEffect(()=>
     {
-      fetch(`http://www.omdbapi.com/?t=${param.title}&apikey=${process.env.NEXT_PUBLIC_API}`).then(response=>response.json()).then(data=>setData(data))
+      fetch(`http://www.omdbapi.com/?t=${param.title}&apikey=${api_key}`).then(response=>response.json()).then(data=>setData(data))
       console.log();
     },[param.title])
   return (
