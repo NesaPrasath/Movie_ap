@@ -16,7 +16,7 @@ export default function Page() {
   // https://api.kinocheck.de/movies?tmdb_id=299534
     useEffect(()=>
     {
-      fetch(`http://www.omdbapi.com/?t=${param.title}&apikey=${api_key}`).then(response=>response.json()).then(data=>setData(data))
+      fetch(`https://www.omdbapi.com/?t=${param.title}&apikey=${api_key}`).then(response=>response.json()).then(data=>setData(data))
       console.log();
     },[param.title])
   return (
