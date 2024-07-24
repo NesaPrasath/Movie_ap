@@ -17,8 +17,7 @@ export default function Page() {
     useEffect(()=>
     {
       fetch(`https://www.omdbapi.com/?t=${param.title}&apikey=${api_key}`).then(response=>response.json()).then(data=>setData(data))
-      console.log();
-    },[param.title])
+    },[api_key, param.title])
   return (
     <div>
     {(user!=='')?<>{(data.Response==='True')?<div className='h-fit'>

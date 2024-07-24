@@ -68,7 +68,6 @@ export default function Signin({ func }) {
 //       </div>
 //     );
 //   },[]);
-// console.log("adad",Comp);
   return (
     <div className="fixed inset-y-0 inset-x-6 bg-black-st z-30 ">
       <div className="bg-white relative left-35% top-28 w-fit h-fit text-black p-4 rounded-md">

@@ -27,7 +27,7 @@ export default function Page() {
     {
       let user;
       if(typeof window !="undefined"){
-        user=JSON.parse(localStorage.getItem('users'))
+        user=JSON.parse(localStorage.getItem('users'))?JSON.parse(localStorage.getItem('users')):{};
       }
       if(user?.hasOwnProperty(username))
       {
@@ -45,7 +45,6 @@ export default function Page() {
       {
         
         user[username]=password
-        console.log('user not present')
         localStorage.setItem('users',JSON.stringify(user))
         document.querySelector('#user').value=''
         document.querySelector('#password').value=''

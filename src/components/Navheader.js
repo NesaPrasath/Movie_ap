@@ -6,12 +6,10 @@ import { UserContext } from './Header';
 
 export default function Navheader() {
   const {user,setUser}=useContext(UserContext)
-  // console.log(activeuser)np
   // const getCntx = useContext(UserContext);
 
   function handleSignin() {
     document.getElementById("signinPopup").classList.toggle("hidden");
-    console.log("clicked sigin")
     // setShow((prev) => !prev);
   }
   // function handleuser()

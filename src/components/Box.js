@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Box({Title,Year,Rating,Plot,Actors,img}) {
-  // console.log(img,Title)
   return (
     <div className=' bg-transparent border-y-2 my-2 border-white p-4 flex gap-2'>
         <Image src={img} width={100} height={100} alt='movie_img'/>
